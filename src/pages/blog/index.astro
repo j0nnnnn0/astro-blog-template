@@ -14,7 +14,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
   <div class="container">
     <span class="flex" >
       <Icon class="text-4xl" name="gridicons:reblog" />
-    <h1>About</h1>
+    <h1 class="pl-3">Blog</h1>
     </span>
     {allPosts.map((post, index) => {
       const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
@@ -22,10 +22,10 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
         <div>
           { index !== 0 && <hr /> }
           <div class="post-item">
-            <h2>
+            <h3>
               <a href={href}>{post.frontmatter.title}</a>
-            </h2>
-            <p>{post.frontmatter.description}</p>
+            </h3>
+            <p class="text-zinc-400">{post.frontmatter.description}</p>
             <div class="post-item-footer">
               <span class="post-item-date">— {post.frontmatter.publishDate}</span>
             </div>
