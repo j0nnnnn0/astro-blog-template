@@ -14,6 +14,8 @@
     "@astrojs/svelte": "^5.0.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.0.1",
+    "flowbite": "^2.3.0",
+    "flowbite-typography": "^1.0.3",
     "gsap": "^3.12.5",
     "react-icons": "^5.2.0",
     "reading-time": "^1.5.0",
