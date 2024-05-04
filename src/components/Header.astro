@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro'
 import Nav from './Nav.astro'
+import Pwdlogo from './pwdlogo.astro';
 
 const { current = '' } = Astro.props;
 ---
@@ -17,5 +18,6 @@ const { current = '' } = Astro.props;
 
 <header>
   <Logo />
+  <Pwdlogo />
   <Nav current={current} />
 </header>
