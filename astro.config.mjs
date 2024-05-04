@@ -4,13 +4,13 @@ import mdx from '@astrojs/mdx';
 import remarkGfm from 'remark-gfm';
 import remarkSmartypants from 'remark-smartypants';
 import rehypeExternalLinks from 'rehype-external-links';
-
 import tailwind from "@astrojs/tailwind";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-blog-template.netlify.app',
-  integrations: [mdx(), svelte(), tailwind()],
+  site: 'https://astro.pwd.dev',
+  integrations: [mdx(), svelte(), tailwind(), icon()],
   markdown: {
     shikiConfig: {
       theme: 'nord'

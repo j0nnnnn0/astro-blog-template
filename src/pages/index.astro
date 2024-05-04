@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Icon } from 'astro-icon/components'
 
 const title = 'astro.pwd.dev';
 const description = 'Find your Path.';
@@ -9,7 +10,10 @@ const permalink = Astro.site.href;
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
+      <span class="flex" >
+        <Icon class="text-4xl" name="mdi:terminal-line" /> 
       <h1>pwd.dev</h1>
+      </span>
       <h2>Find your Path.</h2>
       <p class = "text-zinc-400 text-xs content-center"> some more text to present pwd.dev</p>
       <p class="text-black group-hover:text-gray">Astro</p>

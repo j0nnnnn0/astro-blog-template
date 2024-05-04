@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Icon } from 'astro-icon/components'
 
 const title = 'Blog';
 const description = 'Latest articles.';
@@ -11,7 +12,10 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
 <BaseLayout title={title} description={description} permalink={permalink} current="blog">
   <div class="container">
-    <h1>Blog</h1>
+    <span class="flex" >
+      <Icon class="text-4xl" name="gridicons:reblog" />
+    <h1>About</h1>
+    </span>
     {allPosts.map((post, index) => {
       const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
       return (
